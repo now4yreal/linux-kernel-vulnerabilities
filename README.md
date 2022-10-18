@@ -2,7 +2,7 @@
 
 ## Why?
 
-Analyze causes of linux kernel vulnerabilitie, to pump out more bug (HOPE)
+Analyze causes of linux kernel vulnerabilitie, to pump out more bugs (HOPE)
 
 ## How?
 
