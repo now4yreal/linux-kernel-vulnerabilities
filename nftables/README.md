@@ -4,14 +4,10 @@ From: http://blog.dbouman.nl/2022/04/02/How-The-Tables-Have-Turned-CVE-2022-1015
 
 Root cause: length can be controled by user, which is checked improperly. As a result, length can be minus. The length is validated later, however, there exists a integer-overflow bug in the checking function.
 
-[linux-kernel-vulnerabilities-root-cause-analysis](https://github.com/now4yreal/linux-kernel-vulnerabilities-root-cause-analysis)
+<details>
+<summary>Related code: </summary>
 
-Related code:
-
-```
-
-
-
+```c
 int nft_parse_register_load(const struct nlattr *attr, u8 *sreg, u32 len)
 {
   
@@ -90,5 +86,6 @@ static int nft_validate_register_load(enum nft_registers reg, unsigned int len)
 
     return 0;
 }  
-
 ```
+</details>
+
